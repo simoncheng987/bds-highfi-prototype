@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>BDS Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" id="home">
+        <div class="w3-bar w3-custom w3-wide w3-padding w3-card">
+            <img alt="bds logo icon" href="#home" class="w3-bar-item w3-button logo w3-hover-none" src="logo.png"
+                alt="">
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a alt="Home Clickable text" href="#home" class="w3-bar-item button">Home</a>
+                <a alt="About Clickable text" href="#about" class="w3-bar-item button">About</a>
+                <a alt="Books Clickable text" class="w3-bar-item button href-link">Books</a>
+                <a alt="News Clickable text" class="w3-bar-item button href-link">News</a>
+                <a alt="Login Clickable text" class="w3-bar-item button href-link">Login</a>
+                <a alt="Register Clickable text"
+                    onclick="document.getElementById('trigger-modal').style.display='block'" style="cursor: pointer;"
+                    class="w3-bar-item register-button bold">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal that pops up when you click on "Registration" -->
+    <div id="trigger-modal" class="w3-modal" style="z-index:4">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container custom-background-color padding-right-remove">
+                <span onclick="document.getElementById('trigger-modal').style.display='none'"
+                    class="w3-button w3-red w3-right w3-xxlarge cross-outter"><i class="cross">X</i></span>
+                <h3 alt="Registration" class="skin-color">Registration Form</h3>
+            </div>
+
+            <div id="bookclubrego" class="form-padding skin-background-color form-font custom-color">
+                <div id="userDetails"> <label alt="User Details">User Details</label>
+                    <input alt="Given name input field" class="input border w3-margin-bottom" placeholder="Given name"
+                        type="text">
+                    <input alt="Surname input field" class="input border w3-margin-bottom" placeholder="Surname"
+                        type="text">
+                    <input alt="Username input field" class="input border w3-margin-bottom" placeholder="Username"
+                        type="text">
+                    <input alt="Password input field" class="input border w3-margin-bottom" placeholder="Password"
+                        type="text">
+                </div>
+                <div id="addresses"> <label alt="Addresses">Addresses</label>
+                    <input alt="Home Address input field" class="input border w3-margin-bottom"
+                        placeholder="Home Address" type="text">
+                    <input alt="Work Address input field" class="input border w3-margin-bottom"
+                        placeholder="Work Address" type="text">
+                </div>
+                <div id="contacts"> <label alt="Contacts">Contacts</label>
+                    <input alt="Mobile Number input field" class="input border w3-margin-bottom"
+                        placeholder="Mobile Number " type="text">
+                    <input alt="Email input field" class="input border w3-margin-bottom" placeholder="Email"
+                        type="text">
+                </div>
+                <div class="w3-section">
+                    <button alt="Cancel Button" class="form-button red-color text-align-center skin-color"
+                        onclick="document.getElementById('trigger-modal').style.display='none'">
+                         Cancel &nbsp; </button>
+                    <button alt="Done Button" class="form-button w3-right share-button"> &nbsp; Done  <i
+                            class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header-wrap">
+        <header class="w3-display-container w3-content w3-wide header-color banner" style="max-width:1564px;" id="home">
+            <img alt="Reading Time Image" class="w3-image " src="banner2.jpg" alt="Architecture" width="1564"
+                height="800">
+            <div class="w3-display-middle w3-margin-top w3-center">
+                <h1 class="w3-xxlarge w3-text-white">
+                    <!-- <span><img class="lgoo-middle" src="logo.png" alt=""></span> -->
+                    <span class="banner-text1"><b alt="BDS">BDS</b></span> <span alt="Book
+                    Discussion Scheme" class=" banner-text2">Book
+                        Discussion Scheme</span>
+                </h1>
+                <!-- <h1></h1> -->
+            </div>
+        </header>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding color_scheme2">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h3 alt="About" class=" w3-padding-16 ">About</h3>
+            <p alt="Book Discussion Scheme lends books & professionally prepared discussion notes to book groups. Groups
+            receive enough copies of their selected title to allow everyone in the group to read the same book at
+            the same time. We're a nationwide non-profit organisation with a 46-year track record. We try to keep our membership
+            costs affordable for everyone, while offering a range of programmes and titles to suit a wide range of
+            reading tastes - from classics to the lastest page-turners. There's 1000+ fiction & non-fiction titles
+            to choose from. We can help you join an existing group, or you can register your group with us.">Book
+                Discussion Scheme lends books & professionally prepared discussion notes to book groups. Groups
+                receive enough copies of their selected title to allow everyone in the group to read the same book at
+                the same time.
+
+                We're a nationwide non-profit organisation with a 46-year track record. We try to keep our membership
+                costs affordable for everyone, while offering a range of programmes and titles to suit a wide range of
+                reading tastes - from classics to the lastest page-turners. There's 1000+ fiction & non-fiction titles
+                to choose from. We can help you join an existing group, or you can register your group with us.
+            </p>
+        </div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32 color_scheme1" id="projects" style="background-color: #316650;">
+        <h3 alt="Book Recommendation" class=" w3-padding-16">Book Recommendation</h3>
+    </div>
+
+    <div class="row-padding">
+        <div class="w3-col l3 m6 ">
+            <div alt="Card 1" href="#" class="w3-display-container book-box">
+                <!-- <div class="w3-display-topleft w3-black w3-padding">Summer House</div> -->
+                <img alt="Burial Rites Book Cover" src="book5.jpg" alt="House" style="width:100%"> </img>
+                <h3 alt="Burial Rites">Burial Rites</h3>
+                <p alt="Genera: Crime Fiction">Genera: Crime Fiction</p>
+
+                <!-- <a href=""><br><br></a> -->
+                <div class="w3-display-container learn-more href-link">
+                    <a alt="Learn More">+ Learn More &nbsp; </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w3-col l3 m6 ">
+            <div alt="Card 2" href="#" class="w3-display-container book-box">
+                <!-- <div class="w3-display-topleft w3-black w3-padding">Summer House</div> -->
+                <img alt="Sand Talk Book Cover" src="book2.JPG" style="width:100%"> </img>
+                <h3 alt="Sand Talk">Sand Talk</h3>
+                <p alt="Genera: Sociology">Genera: Sociology</p>
+
+                <!-- <a href=""><br><br></a> -->
+                <div class="w3-display-container learn-more href-link">
+                    <a alt="Learn more">+ Learn More &nbsp; </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w3-col l3 m6 ">
+            <div alt="Card 3" href="#" class="w3-display-container book-box">
+                <!-- <div class="w3-display-topleft w3-black w3-padding">Summer House</div> -->
+                <img alt="The Terminal List Book Cover" src="book3.jpg" style="width:100%"> </img>
+                <h3 alt="The Terminal List">The Terminal List</h3>
+                <p alt="Genera: Thriller Book">Genera: Thriller Book</p>
+
+                <!-- <a href=""><br><br></a> -->
+                <div class="w3-display-container learn-more href-link">
+                    <a alt="Learn more">+ Learn More &nbsp; </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w3-col l3 m6 ">
+            <div alt="Card 4" href="#" class="w3-display-container book-box" style="cursor: pointer;">
+                <!-- <div class="w3-display-topleft w3-black w3-padding">Summer House</div> -->
+                <img alt="Explore Button" src="flip.png" style="width:100%"> </img>
+                <h3 alt="Explore More">Explore More</h3>
+                <p alt="Come check out our archive">Come check out our archive!!</p>
+
+                <!-- <a href=""><br><br></a> -->
+                <div class="w3-display-container learn-more">
+                    <a class="invisible" href="">+ Learn More &nbsp; </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="w3-center custom-background-color w3-padding-16 skin-color">
+        <a href="#home " alt="Back to top" target="_self" title="Back to top" target="_blank" class="to_top_label"><br>
+            Back to top
+        </a>
+    </footer>
+
+</body>
+
+
+
+
+
+</html>
